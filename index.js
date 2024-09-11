@@ -1,10 +1,13 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import pool from './db/db.js';
 
 // Carga las variables de entorno
 dotenv.config();
 
 const app = express();
+
+// 
 
 // Middleware para interpretar JSON
 app.use(express.json());
